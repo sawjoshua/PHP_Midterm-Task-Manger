@@ -1,81 +1,70 @@
-README.md
 # Student Task Manager
+
+**Student Name:** Saw Joshua  
+**Student ID:** 202300311  
+
+---
 
 ## Project Description
 
-Student Task Manager is a PHP and MySQL web application developed for the PHP Midterm Project.
-
-The system allows students to:
-
-- Add new tasks
-- View all tasks
-- Edit existing tasks
-- Delete tasks
-- Mark tasks as completed
-- Count completed tasks
-
-The project demonstrates CRUD operations using PHP PDO and MySQL.
+Student Task Manager is a PHP and MySQL web application built for the PHP CRUD Practical Exam. The system allows users to add, view, edit, update, complete, and delete academic tasks. The project was developed using PHP PDO, MySQL, HTML, and CSS without using any frameworks.
 
 ---
 
 ## Features
 
 ### Create
-Users can add a new task by entering:
-
-- Task Title
+Add a new task with:
+- Title
 - Description
 - Category
 - Priority
 - Due Date
 
 ### Read
-Users can view all tasks in a table format.
+View all tasks in a table format sorted by due date.
 
 ### Update
-Users can edit existing task information and update task status.
+Modify existing task information including task status.
 
 ### Delete
-Users can delete tasks from the database.
+Remove tasks permanently from the database.
+
+### Complete Task
+Mark tasks as completed.
 
 ### Challenge Feature
-Displays the total number of completed tasks.
+Display:
+- Total Tasks
+- Completed Tasks
+- Pending Tasks
 
 ---
 
 ## Technologies Used
 
 - PHP
-- MySQL
+- MySQL / MariaDB
 - PDO (PHP Data Objects)
 - HTML5
 - CSS3
 - XAMPP
 - phpMyAdmin
-
----
-
-## Database Name
-
-task_manager
-
----
-
-## Table Structure
-
-### tasks
-
-| Field | Type |
-|---------|---------|
-| id | INT |
-| title | VARCHAR(150) |
-| description | TEXT |
-| category | VARCHAR(50) |
-| priority | VARCHAR(20) |
-| due_date | DATE |
-| completed | TINYINT(1) |
-| created_at | TIMESTAMP |
+- Visual Studio Code
 
 ---
 
 ## Project Structure
+
+```text
+StudentTaskManager/
+│
+├── index.php
+├── create.php
+├── edit.php
+├── delete.php
+├── db.php
+├── functions.php
+├── style.css
+├── task_manager.sql
+└── README.md
